@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador Alura</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="img/Logo.png" alt="Logo" class="logo">
+        <h1>Encriptador de Texto</h1>
+
+        <div class="main-content">
+            <div class="input-area">
+                <label for="inputText" class="input-label"></label>
+                <div class="input-container">
+                    <textarea id="inputText" placeholder="Ingrese el texto aquí" class="input-text"></textarea>
+                </div>
+                <p class="input-guide">Solo letras minúsculas y sin acentos</p>
+                <div class="options">
+                    <button onclick="encryptText()" id="encryptBtn">Encriptar</button>
+                    <button onclick="decryptText()" id="decryptBtn">Desencriptar</button>
+                </div>
+            </div>
+
+            <div id="resultArea" class="result-area">
+                <img id="noOneImage" src="img/Noone.png" alt="Noone">
+                <p id="noMessage">Ningún mensaje fue encontrado</p>
+                <p id="enterMessage">Ingrese el texto que desees encriptar o desencriptar.</p>
+                <button onclick="copyToClipboard()" id="Porta">Copiar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desarrollado por Iris Curo</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
